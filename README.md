@@ -1,14 +1,62 @@
 # Challenge-10
-Background
+Challenge-10
+Crypto Clusters
 ---
-In this Challenge, you’ll assume the role of an advisor in one of the top five financial advisory firms in the world. Competitors are fierce, so you want to propose a novel approach to assembling investment portfolios that are based on cryptocurrencies. Instead of basing your proposal on only returns and volatility, you want to include other factors that might impact the crypto market—leading to better performance for your portfolio.
 
-When you present the idea, your manager loves it! So, you’re asked to create a prototype for submitting your crypto portfolio proposal to the company board of directors.
+Our goal was to use unsupervised machine learning to clusters cryptocurrencies by their performance in different time periods.
 
-What You're Creating
+We starting by importing Crypto Data into our note book, and turning it into a DataFrame .
+
+We then found the optimal K to try so we we would have an idea of what the most efficent number of clusters would be.
+
+We then put the sklearn model to work and graphed the results.
+
+Afterwards we filtered out some of the data we did not need using PCA.
+
+We then put the model to work again on the filtered data.
+
+Finally we compared results between the two
+
+The filtered Data provided a cleaner picture of the clusters
+
+Technologies
 ---
-In this Challenge, you’ll combine your financial Python programming skills with the new unsupervised learning skills that you acquired in this module.
+This application is written in Python 
 
-You’ll create a Jupyter notebook that clusters cryptocurrencies by their performance in different time periods. You’ll then plot the results so that you can visually show the performance to the board.
+this application uses the following packages:
 
-The CSV file that’s provided for this Challenge contains the price change data of cryptocurrencies in different periods.
+pandas pyviz hvplot pathlib KMeans from sklearn PCA from sklearn StandardScaler from sklearn
+
+Installation Guide
+---
+Before running the application first install the following dependencies.
+
+python
+
+First item conda install -c pandas
+Second item conda install -c pathlib
+Third item conda install -c sklearn
+
+Examples
+---
+
+![image](https://user-images.githubusercontent.com/107014664/194116735-0db28b23-76e1-43cb-b9cb-bcc737327033.png)
+
+
+
+
+![image](https://user-images.githubusercontent.com/107014664/194116980-9a3b829b-e5f9-4168-95ec-9b7a90eb4bb6.png)
+
+
+
+![image](https://user-images.githubusercontent.com/107014664/194117153-9c3a0a9e-c839-4a91-b79e-3c2f34f0bbc5.png)
+
+Contributers
+---
+David Hutsell
+
+License
+----
+UW Fintech
+
+
